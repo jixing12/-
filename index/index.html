@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>小屋</title>
+    <link rel="icon" href="C:\Users\lujiu\Desktop\favicon.ico" />
+    <style type="text/css">
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      .flex {
+        display: flex;
+      }
+      .baise {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .yingyin {
+        box-shadow: lightcyan;
+      }
+      .daohang {
+        padding: 10px 20px;
+        border-bottom: 2px solid rgba(125, 96, 96, 0.47);
+        font-size: 20px;
+        color: rgb(41, 8, 8);
+      }
+      @media (max-width: 600px) {
+        .ceBian {
+          display: none;
+        }
+        .neirong {
+          flex-direction: column;
+        }
+        .shujuqu {
+          flex-direction: column;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: rgb(34, 119, 119);
+      }
+      li {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!-- 侧边栏 -->
+    <div style="width: 200px; z-index: 2" class="ceBian baise yingyin">
+      <!-- 头像栏 -->
+      <div
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 2px solid #999;
+        "
+        class="flex"
+      >
+        <img src="哪吒.jpg" width="50px" height="40px" alt="" />
+        <div style="margin-left: 10px">python</div>
+      </div>
+      <!-- 导航栏 -->
+      <div class="flex1">
+        <div class="daohang">
+          <a href="xiaochou.html">小丑</a>
+        </div>
+        <div class="daohang">
+          <a href="doubandianying.html">豆瓣电影</a>
+        </div>
+        <div class="daohang">
+          <a href="weiboresou.html">微博热搜</a>
+        </div>
+      </div>
+    </div>
+    <!-- 主区域 -->
+    <div class="flex1 flex column mg8">
+      <!-- 头部栏 -->
+      <div
+        style="
+          height: 60px;
+          z-index: 1;
+
+          display: flex;
+          align-items: center;
+          justify-content: start;
+        "
+        class="baise yingyin"
+      >
+        <li style="font-size: 25px; margin: 5px">
+          <a>python</a>
+        </li>
+        <li style="margin: 10px; font-size: 20px">
+          <a
+            href="https://search.bilibili.com/video?keyword=python&from_source=webtop_search&spm_id_from=333.1007&search_source=5"
+            >全部:</a
+          >
+        </li>
+        <li style="margin: 10px">
+          <a href="https://www.bilibili.com/video/BV1J54y1F7gU?p=1">爬虫</a>
+        </li>
+        <li>
+          <a
+            href="https://search.bilibili.com/video?keyword=python%E7%BD%91%E9%A1%B5%E5%88%B6%E4%BD%9C&from_source=webtop_search&spm_id_from=333.1007&search_source=5"
+            >网页制作</a
+          >
+        </li>
+      </div>
+      <!-- 内容区 -->
+      <div class="flex1 flex neirong" style="overflow: auto">
+        <!-- 左区 -->
+        <div style="flex: 3" class="flex column mg8">
+          <!-- 数据区 -->
+          <div class="flex shujuqu" style="font-size: 35px">
+            <!-- 数据块 -->
+            <a
+              style="height: 100px"
+              class="flex1 baise mgr8 yinying"
+              href="https://www.douyin.com/"
+            >
+              抖音
+            </a>
+            <a
+              style="height: 100px"
+              class="flex1 baise mgr8 yinying"
+              href="https://www.bilibili.com/"
+            >
+              哔哩哔哩
+            </a>
+            <a
+              style="height: 100px"
+              class="flex1 baise mgr8 yinying"
+              href="https://y.qq.com/?ADTAG=myqq#type=index"
+              >QQ音乐</a
+            >
+          </div>
+          <!-- 列表区 -->
+          <div class="flex column">
+            <!-- 列表项 -->
+            <div style="height: 160px" class="baise mgt8 yingyin"></div>
+            <div style="height: 160px" class="baise mgt8 yingyin"></div>
+            <div style="height: 160px" class="baise mgt8 yingyin"></div>
+            <div style="height: 160px" class="baise mgt8 yingyin"></div>
+            <div style="height: 160px" class="baise mgt8 yingyin"></div>
+            <div style="height: 160px" class="baise mgt8 yingyin"></div>
+            <div style="height: 160px" class="baise mgt8 yingyin"></div>
+            <div style="height: 160px" class="baise mgt8 yingyin"></div>
+            <div style="height: 160px" class="baise mgt8 yingyin"></div>
+          </div>
+        </div>
+        <!-- 右区 -->
+        <div style="flex: 1" class="flex column mgr8 mgt8">
+          <!-- 提示区 -->
+          <div style="height: 150px" class="baise yingyin"></div>
+          <!-- 消息区 -->
+          <div style="height: 300px" class="baise mgt8 yingyin"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://blog-static.cnblogs.com/files/axqa/snowflakeCursor.js"></script>
+  </body>
+</html>
